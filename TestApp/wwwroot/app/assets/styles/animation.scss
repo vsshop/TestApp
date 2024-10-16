@@ -1,0 +1,41 @@
+//HEADER
+
+@keyframes header {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+::view-transition-old(tours-header) {
+  animation: header 0.4s ease-in;
+}
+
+::view-transition-new(tours-header) {
+  animation: header 0.6s ease-in reverse;
+}
+
+
+
+//MENU
+
+@keyframes footer {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+::view-transition-old(tours-menu) {
+  animation: footer 0.4s ease-in;
+}
+
+::view-transition-new(tours-menu) {
+  animation: footer 0.6s ease-in reverse;
+}
